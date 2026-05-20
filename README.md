@@ -71,14 +71,14 @@ All personal content is in one file: **`src/data.js`**
 
 ## Contact Form
 
-Uses [Formspree](https://formspree.io) (free tier — 50 submissions/month).
+Uses [Formspree](https://formspree.io)
 
 1. Sign up at formspree.io
 2. Create a new form, set your email
 3. Copy the form ID (e.g. `xpzgkjqr`)
 4. Update `src/components/Contact.jsx`:
    ```
-   action="https://formspree.io/f/xpzgkjqr"
+   action="https://formspree.io/f/<ID>"
    ```
 
 ---
