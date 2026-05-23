@@ -57,7 +57,7 @@ export const projects = [
   {
     title: 'Change Data Capture Pipeline',
     company: 'American Express',
-    year: '2024',
+    year: '2025',
     impact: 'Real-time data sync across 5 systems',
     tags: ['Debezium', 'Kafka Connect', 'PySpark', 'Flink', 'Delta Lake', 'Snowflake', 'S3'],
     description:
@@ -97,7 +97,7 @@ export const projects = [
   {
     title: 'Workflow Orchestration Engine',
     company: 'American Express',
-    year: '2023',
+    year: '2024',
     impact: 'Zero-downtime deployments at scale',
     tags: ['Scala', 'ZIO', 'Kafka', 'Kubernetes', 'Jenkins'],
     description:
