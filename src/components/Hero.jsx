@@ -127,7 +127,7 @@ export default function Hero() {
             <div className="col-span-2 bg-panel border border-border p-6">
               <div className="font-mono text-xs text-muted mb-4">// Core stack</div>
               <div className="flex flex-wrap gap-2">
-                {['Kafka', 'Spark', 'Scala', 'ZIO', 'Python', 'AWS', 'GCP', 'K8s', 'Flink', 'PySpark'].map((tech) => (
+                {['Kafka', 'Spark', 'Flink', 'Databricks', 'Snowflake', 'Airflow', 'Scala', 'Python', 'AWS', 'GCP', 'K8s', 'Delta Lake'].map((tech) => (
                   <span
                     key={tech}
                     className="font-mono text-xs px-2 py-1 bg-border/50 text-accent/80 hover:bg-accent/10 hover:text-accent transition-colors duration-150"

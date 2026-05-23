@@ -6,20 +6,25 @@ export const profile = {
   phone: '(209) 684-8774',
   email: 'amudhanfz@gmail.com',
   linkedin: 'https://www.linkedin.com/in/amudhans',
-  github: 'https://github.com', // Update with your actual GitHub
-  summary: `Senior Software Engineer with 18+ years of experience building large-scale distributed data platforms, real-time streaming systems, and cloud-native analytics solutions. Deep expertise in Kafka, Spark, PySpark, AWS, GCP, Azure, Scala, and reactive microservices for high-volume event-driven architectures. Proven track record designing workflow orchestration engines, AST-based rule evaluation frameworks, and scalable execution pipelines aligned with modern AI/ML feature processing.`,
+  github: 'https://github.com',
+  summary: `Senior Software Engineer with 18+ years of experience building scalable distributed systems, real-time data platforms, and cloud-native applications across fintech, cybersecurity, and enterprise domains. Deep expertise in Kafka, Spark, Flink, Databricks, Snowflake, and modern cloud technologies across AWS, GCP, and Azure.`,
 }
 
 export const skills = [
   {
     category: 'Streaming & Data',
     icon: '⚡',
-    items: ['Apache Kafka', 'Apache Spark', 'PySpark', 'Apache Flink', 'Spark Structured Streaming'],
+    items: ['Apache Kafka', 'Apache Spark', 'PySpark', 'Apache Flink', 'Kafka Streams', 'KSQL', 'Spark MLlib'],
+  },
+  {
+    category: 'Lakehouse & Orchestration',
+    icon: '🏗️',
+    items: ['Databricks', 'Snowflake', 'Apache Airflow', 'Delta Lake', 'Debezium', 'Kafka Connect', 'ETL / ELT'],
   },
   {
     category: 'Cloud Platforms',
     icon: '☁️',
-    items: ['AWS (S3, EMR, EC2, Glue)', 'GCP (Pub/Sub, BigQuery, Bigtable, GCS)', 'Azure Synapse Analytics', 'Terraform', 'Bicep'],
+    items: ['AWS (S3, EMR, EC2, Glue)', 'GCP (Pub/Sub, BigQuery, Bigtable, GCS)', 'Azure (Synapse, Data Explorer)'],
   },
   {
     category: 'Languages',
@@ -27,19 +32,14 @@ export const skills = [
     items: ['Scala', 'Python', 'Java', 'PySpark', 'SQL'],
   },
   {
-    category: 'Infra & Observability',
+    category: 'Infra & DevOps',
     icon: '📡',
-    items: ['Kubernetes (K8s)', 'Helm', 'Prometheus', 'Grafana', 'OpenTelemetry', 'Distributed Tracing'],
-  },
-  {
-    category: 'Frameworks',
-    icon: '🔧',
-    items: ['ZIO', 'Spring Boot', 'Spring Cloud', 'RxJava', 'Apache Camel'],
+    items: ['Kubernetes (K8s)', 'Helm', 'Docker', 'Terraform', 'Bicep', 'Jenkins CI/CD', 'OpenTelemetry'],
   },
   {
     category: 'Databases',
     icon: '🗄️',
-    items: ['PostgreSQL', 'Oracle', 'Elasticsearch', 'Bigtable', 'BigQuery'],
+    items: ['PostgreSQL', 'Cassandra', 'Redis', 'Elasticsearch', 'Bigtable', 'BigQuery', 'MySQL'],
   },
 ]
 
@@ -55,24 +55,34 @@ export const projects = [
     color: 'accent',
   },
   {
-    title: 'Workflow Orchestration Engine',
+    title: 'Change Data Capture Pipeline',
     company: 'American Express',
-    year: '2023',
-    impact: 'Zero-downtime deployments at scale',
-    tags: ['Scala', 'ZIO', 'Kafka', 'PostgreSQL', 'Kubernetes'],
+    year: '2024',
+    impact: 'Real-time data sync across 5 systems',
+    tags: ['Debezium', 'Kafka Connect', 'PySpark', 'Flink', 'Delta Lake', 'Snowflake', 'S3'],
     description:
-      'Architected a workflow compiler that transforms user-defined JSON workflows into processor-ready execution plans. Built an async metadata propagation processor that keeps control and execution plane databases in sync with reliable configuration deployment across Kubernetes clusters.',
+      'Designed and implemented an enterprise-grade Change Data Capture pipeline using Debezium and Kafka Connect with downstream PySpark, Apache Flink, S3, Delta Lake, and Snowflake integrations — enabling real-time data propagation across the entire analytics stack.',
     color: 'gold',
   },
   {
-    title: 'Cybersecurity Analytics Platform',
+    title: 'Unified Data Lakehouse Platform',
+    company: 'American Express',
+    year: '2023',
+    impact: '150+ jobs orchestrated · Real-time + batch analytics',
+    tags: ['Databricks', 'Snowflake', 'Apache Airflow', 'Delta Lake'],
+    description:
+      'Built a unified data lakehouse supporting real-time analytics via Databricks and batch BI queries via Snowflake, orchestrating 150+ jobs using Apache Airflow — enabling both operational and analytical workloads on a single scalable platform.',
+    color: 'accent',
+  },
+  {
+    title: 'Multi-Tenant Security Analytics Platform',
     company: 'Securonix',
     year: '2021',
-    impact: '70% latency reduction · 40% MTTD improvement',
-    tags: ['Kafka', 'Spark', 'Flink', 'AWS EMR', 'OpenTelemetry'],
+    impact: '70% latency reduction · Millions of events/sec',
+    tags: ['Kafka', 'GCP Pub/Sub', 'Flink', 'Spark MLlib', 'AWS EMR', 'Bigtable', 'BigQuery'],
     description:
-      'Led architecture and development of a large-scale cybersecurity analytics platform processing billions of security events per day. Built reusable analytics components on AWS EMR, instrumented distributed services with OpenTelemetry, and built Prometheus alerting with Grafana dashboards that cut mean-time-to-detect production incidents by 40%.',
-    color: 'accent',
+      'Architected a multi-tenant security analytics platform ingesting millions of security events per second using Kafka, GCP Pub/Sub, Apache Flink, and Spark on AWS EMR. Built a threat correlation and enrichment pipeline using Spark MLlib and Bigtable for sub-10ms hot event lookups and BigQuery-based analytics.',
+    color: 'gold',
   },
   {
     title: 'Oracle → Elasticsearch Replication Pipeline',
@@ -81,58 +91,57 @@ export const projects = [
     impact: '40% improvement in processing efficiency',
     tags: ['Java', 'Kafka', 'Elasticsearch', 'ZooKeeper', 'Multithreading'],
     description:
-      'Architected a mission-critical multi-threaded pipeline to replicate data from Oracle Database to Elasticsearch. Implemented checkpoint-based recovery, health monitoring, and fault-tolerant handling across Kafka, Elasticsearch, Apache ZooKeeper, and Oracle. Improved processing efficiency by 40% through optimized concurrency and resource management.',
-    color: 'gold',
+      'Architected a high-performance multi-threaded streaming pipeline from Oracle to Elasticsearch with checkpoint-based auto-recovery, improving processing efficiency by 40% through optimized concurrency and resource management.',
+    color: 'accent',
   },
   {
-    title: 'AI-Assisted Vulnerability Remediation',
+    title: 'Workflow Orchestration Engine',
     company: 'American Express',
-    year: '2024',
-    impact: '180+ repos automated · Built in 1 week',
-    tags: ['AI/ML', 'Python', 'Automation', 'Security'],
+    year: '2023',
+    impact: 'Zero-downtime deployments at scale',
+    tags: ['Scala', 'ZIO', 'Kafka', 'Kubernetes', 'Jenkins'],
     description:
-      'Developed automated remediation jobs using AI-assisted tooling to identify and apply security vulnerability fixes across more than 180 repositories. Created an internal vulnerability management application in one week using AI-assisted development to automate tracking and remediation workflows.',
-    color: 'accent',
+      'Architected a workflow compiler that transforms user-defined JSON workflow definitions into processor-ready execution plans for dynamic orchestration. Established a multi-tenant Kubernetes platform with Helm-managed deployments, Jenkins CI/CD, and OpenTelemetry-based distributed tracing.',
+    color: 'gold',
   },
 ]
 
 export const experience = [
   {
     company: 'American Express',
-    role: 'Senior Engineer',
+    role: 'Senior Software Engineer',
     period: 'May 2023 – Present',
-    location: 'Dallas, TX',
+    location: 'Remote, TX',
     highlights: [
-      'Designed core platform components for a large-scale data streaming and workflow orchestration platform.',
-      'Implemented an AST compiler reducing engineering effort by 80%; built workflow compiler for dynamic orchestration.',
-      'Deployed containerized microservices on Kubernetes with zero-downtime rolling updates.',
-      'Leveraged AI tools to accelerate development, debugging, code generation, and operational automation.',
+      'Implemented an AST compiler that converts domain-specific expressions into executable JSON logic, reducing rule development effort by 80%.',
+      'Built an enterprise-grade CDC pipeline using Debezium and Kafka Connect with downstream PySpark, Flink, S3, Delta Lake, and Snowflake integrations.',
+      'Built a unified data lakehouse for real-time analytics via Databricks and batch BI via Snowflake, orchestrating 150+ jobs with Apache Airflow.',
+      'Established a multi-tenant Kubernetes platform with Helm, Jenkins CI/CD, and OpenTelemetry-based distributed tracing.',
     ],
-    tech: ['Scala', 'ZIO', 'Kafka', 'PostgreSQL', 'Kubernetes', 'Prometheus', 'Grafana'],
+    tech: ['Scala', 'ZIO', 'Kafka', 'Debezium', 'Databricks', 'Snowflake', 'Airflow', 'Delta Lake', 'Kubernetes'],
   },
   {
     company: 'Microsoft',
     role: 'Senior Software Engineer',
     period: 'Jun 2022 – Jan 2023',
-    location: 'Dallas, TX',
+    location: 'Remote, TX',
     highlights: [
-      'Designed enterprise-scale cloud analytics platforms on Microsoft Azure.',
-      'Built end-to-end data ingestion, transformation, aggregation, and reporting pipelines.',
-      'Automated infrastructure provisioning using Terraform and Bicep.',
+      'Designed and implemented scalable end-to-end data ingestion, aggregation, and analytics platforms.',
+      'Built pipelines using Azure Synapse Analytics, PySpark, Bicep, and Terraform.',
     ],
     tech: ['Azure Synapse', 'Python', 'PySpark', 'Terraform', 'Bicep'],
   },
   {
     company: 'Securonix',
-    role: 'Technical Lead Engineer',
+    role: 'Technical Lead',
     period: 'Jun 2020 – Jun 2022',
     location: 'Dallas, TX',
     highlights: [
-      'Led architecture of a cybersecurity analytics platform processing billions of events/day.',
+      'Architected a multi-tenant security analytics platform ingesting millions of security events per second using Kafka, GCP Pub/Sub, Apache Flink, and Spark on AWS EMR.',
+      'Built a threat correlation and enrichment pipeline using Spark MLlib and Bigtable for sub-10ms hot event lookups with BigQuery-based analytics.',
       'Reduced anomaly detection latency by 70% with reusable analytics components on AWS EMR.',
-      'Cut MTTD of production incidents by 40% with Prometheus + Grafana observability stack.',
     ],
-    tech: ['Spark', 'Flink', 'Kafka', 'AWS EMR', 'OpenTelemetry', 'Scala'],
+    tech: ['Kafka', 'GCP Pub/Sub', 'Flink', 'Spark MLlib', 'AWS EMR', 'Bigtable', 'BigQuery'],
   },
   {
     company: 'Walmart Global Tech',
@@ -140,8 +149,8 @@ export const experience = [
     period: 'May 2018 – Jun 2020',
     location: 'San Jose, CA',
     highlights: [
-      'Architected reactive microservices and high-throughput data integration systems.',
-      'Developed non-blocking services using Spring Boot, Spring Cloud, and RxJava.',
+      'Architected a non-blocking reactive data flow pipeline using RxJava for high-throughput, low-latency processing.',
+      'Built Spring Boot microservices for scalable data integration systems.',
     ],
     tech: ['RxJava', 'Spring Boot', 'Spring Cloud'],
   },
@@ -151,9 +160,8 @@ export const experience = [
     period: 'May 2016 – Apr 2018',
     location: 'San Jose, CA',
     highlights: [
-      'Designed mission-critical streaming and search integration systems.',
-      'Architected multi-threaded Oracle → Elasticsearch replication pipeline with 40% efficiency gain.',
-      'Implemented checkpoint-based recovery and fault-tolerant handling across distributed components.',
+      'Architected a high-performance multi-threaded streaming solution from Oracle to Elasticsearch, improving efficiency by 40%.',
+      'Implemented checkpoint-based auto-recovery and fault-tolerant handling across distributed components.',
     ],
     tech: ['Java', 'Kafka', 'Elasticsearch', 'ZooKeeper', 'Oracle'],
   },
@@ -176,7 +184,6 @@ export const experience = [
     location: 'Chennai',
     highlights: [
       'Developed enterprise applications using Spring MVC, Spring DAO, Hibernate, and Oracle.',
-      'Designed persistence layers, POJO mappings, and CRUD operations.',
       'Built monitoring and alerting features for throughput, latency, and JVM/OS metrics.',
     ],
     tech: ['Spring MVC', 'Hibernate', 'Oracle', 'Monitoring'],
