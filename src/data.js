@@ -27,9 +27,9 @@ export const skills = [
     items: ['AWS (S3, EMR, EC2, Glue)', 'GCP (Pub/Sub, BigQuery, Bigtable, GCS)', 'Azure (Synapse, Data Explorer)'],
   },
   {
-    category: 'Languages',
+    category: 'Languages & Frameworks',
     icon: '{}',
-    items: ['Scala', 'Python', 'Java', 'PySpark', 'SQL'],
+    items: ['Scala', 'Java', 'Python', 'SQL',  'ZIO', 'Spring Boot', 'RxJava', 'Apache Camel' ],
   },
   {
     category: 'Infra & DevOps',
