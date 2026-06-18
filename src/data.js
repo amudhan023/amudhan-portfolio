@@ -50,28 +50,13 @@ export const skills = [
 
 export const projects = [
   {
-    title: 'AST Compiler — Domain Expression Engine',
-    company: 'American Express',
-    year: '2024',
-    impact: '80% reduction in engineering effort',
-    tags: ['Scala', 'ZIO', 'Compiler Design', 'JSON'],
-    description:
-      'Designed and implemented an Abstract Syntax Tree (AST) compiler that converts domain-specific expressions into executable JSON-based processing logic. Eliminated manual AST creation entirely, reducing engineering effort by over 80% across the platform.',
-    color: 'accent',
-  },
-  {
-    title: 'Real-Time Fraud Intelligence platform',
+    title: 'Real-Time Spend Analytics Platform',
     company: 'American Express',
     year: '2025',
-    impact: 'Real-Time analytics on 1B+ transaction events daily with sub-second latency',
-    tags: ['Apache Flink',
-    'Apache Kafka',
-    'Debezium CDC',
-    'Event Streaming',
-    'Real-time Analytics',
-    'Fraud Detection'],
+    impact: '1B+ transaction events daily · sub-second latency',
+    tags: ['Apache Kafka', 'Apache Flink', 'Stateful Stream Processing', 'Event-Time Windowing', 'Transaction Enrichment', 'Real-time Analytics'],
     description:
-      'Architected real-time streaming pipelines using Apache Flink, Kafka, and Debezium CDC for fraud detection and spend analytics platforms, processing 1B+ transaction events daily with sub-second latency to enable near real-time anomaly detection, transaction enrichment, and risk scoring.',
+      'Architected and operated a large-scale real-time streaming platform using Apache Kafka and Apache Flink, processing 1B+ transaction events daily for near real-time spend analytics and transaction enrichment with sub-second latency, leveraging stateful stream processing, event-time windowing, and fault-tolerant checkpointing for high reliability and scalability.',
     color: 'gold',
   },
   {
@@ -111,7 +96,17 @@ export const projects = [
     description:
       'Developed an AI-powered SRE Copilot using LangGraph, Kafka, and Flink to ingest real-time alerts, logs, metrics, and traces. Correlates multi-service failures leveraging Prometheus, ELK, and deployment events to generate root-cause hypotheses, incident summaries, and mitigation recommendations via LLM-based analysis — delivered through Slack and PagerDuty.',
     color: 'accent',
-  }
+  },
+  {
+    title: 'AST Compiler — Domain Expression Engine',
+    company: 'American Express',
+    year: '2024',
+    impact: '80% reduction in engineering effort',
+    tags: ['Scala', 'ZIO', 'Compiler Design', 'JSON'],
+    description:
+      'Designed and implemented an Abstract Syntax Tree (AST) compiler that converts domain-specific expressions into executable JSON-based processing logic. Eliminated manual AST creation entirely, reducing engineering effort by over 80% across the platform.',
+    color: 'accent',
+  },
 ]
 
 export const experience = [
