@@ -60,6 +60,16 @@ export const projects = [
     color: 'gold',
   },
   {
+    title: 'AI-Assisted SRE Copilot',
+    company: 'American Express',
+    year: '2024',
+    impact: 'Automated root-cause analysis and incident response at scale',
+    tags: ['LangGraph', 'LLM', 'Kafka', 'Apache Flink', 'Prometheus', 'ELK', 'Agentic Workflows', 'PagerDuty'],
+    description:
+      'Developed an AI-powered SRE Copilot using LangGraph, Kafka, and Flink to ingest real-time alerts, logs, metrics, and traces. Correlates multi-service failures leveraging Prometheus, ELK, and deployment events to generate root-cause hypotheses, incident summaries, and mitigation recommendations via LLM-based analysis — delivered through Slack and PagerDuty.',
+    color: 'accent',
+  },
+  {
     title: 'Unified Data Lakehouse Platform',
     company: 'American Express',
     year: '2023',
@@ -86,16 +96,6 @@ export const projects = [
     description:
       ' Architected a multi-tenant security analytics platform ingesting millions of security events per second using Kafka, GCP Pub/ Sub, Apache Flink, and Spark on AWS EMR. Built a threat correlation and enrichment pipeline using Spark MLlib and Cassandra for sub-10ms hot event lookups. ',
     color: 'gold',
-  },
-  {
-    title: 'AI-Assisted SRE Copilot',
-    company: 'American Express',
-    year: '2024',
-    impact: 'Automated root-cause analysis and incident response at scale',
-    tags: ['LangGraph', 'LLM', 'Kafka', 'Apache Flink', 'Prometheus', 'ELK', 'Agentic Workflows', 'PagerDuty'],
-    description:
-      'Developed an AI-powered SRE Copilot using LangGraph, Kafka, and Flink to ingest real-time alerts, logs, metrics, and traces. Correlates multi-service failures leveraging Prometheus, ELK, and deployment events to generate root-cause hypotheses, incident summaries, and mitigation recommendations via LLM-based analysis — delivered through Slack and PagerDuty.',
-    color: 'accent',
   },
   {
     title: 'AST Compiler — Domain Expression Engine',
