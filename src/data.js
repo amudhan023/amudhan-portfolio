@@ -4,7 +4,7 @@ export const profile = {
   tagline: '18+ years building large-scale distributed data platforms, real-time streaming systems, and cloud-native analytics.',
   location: 'Dallas, Texas',
   phone: '(209) 684-8774',
-  email: 'amudhanfz@gmail.com',
+  email: 'amudhan.sec@gmail.com',
   linkedin: 'https://www.linkedin.com/in/amudhans',
   github: 'https://github.com',
   summary: `Senior Software Engineer with 18+ years of experience building scalable distributed systems, real-time data platforms, and cloud-native applications across fintech, cybersecurity, and enterprise domains. Deep expertise in Kafka, Spark, Flink, Databricks, Snowflake, and modern cloud technologies across AWS, GCP, and Azure.`,
@@ -40,6 +40,11 @@ export const skills = [
     category: 'Databases',
     icon: '🗄️',
     items: ['PostgreSQL', 'Cassandra', 'Redis', 'Elasticsearch', 'MySQL'],
+  },
+  {
+    category: 'AI & Agentic Systems',
+    icon: '🤖',
+    items: ['LangGraph', 'LLM Applications', 'Agentic Workflows', 'Prompt Engineering', 'Tool Calling', 'FastAPI'],
   },
 ]
 
@@ -98,25 +103,15 @@ export const projects = [
     color: 'gold',
   },
   {
-    title: 'Oracle → Elasticsearch Replication Pipeline',
-    company: 'Apple',
-    year: '2017',
-    impact: '40% improvement in processing efficiency',
-    tags: ['Java', 'Kafka', 'Elasticsearch', 'ZooKeeper', 'Multithreading'],
-    description:
-      'Architected a high-performance multi-threaded streaming pipeline from Oracle to Elasticsearch with checkpoint-based auto-recovery, improving processing efficiency by 40% through optimized concurrency and resource management.',
-    color: 'accent',
-  },
-  {
-    title: 'Workflow Orchestration Engine',
+    title: 'AI-Assisted SRE Copilot',
     company: 'American Express',
     year: '2024',
-    impact: 'Zero-downtime deployments at scale',
-    tags: ['Scala', 'ZIO', 'Kafka', 'Kubernetes', 'Jenkins'],
+    impact: 'Automated root-cause analysis and incident response at scale',
+    tags: ['LangGraph', 'LLM', 'Kafka', 'Apache Flink', 'Prometheus', 'ELK', 'Agentic Workflows', 'PagerDuty'],
     description:
-      'Architected a workflow compiler that transforms user-defined JSON workflow definitions into processor-ready execution plans for dynamic orchestration. Established a multi-tenant Kubernetes platform with Helm-managed deployments, Jenkins CI/CD, and OpenTelemetry-based distributed tracing.',
-    color: 'gold',
-  },
+      'Developed an AI-powered SRE Copilot using LangGraph, Kafka, and Flink to ingest real-time alerts, logs, metrics, and traces. Correlates multi-service failures leveraging Prometheus, ELK, and deployment events to generate root-cause hypotheses, incident summaries, and mitigation recommendations via LLM-based analysis — delivered through Slack and PagerDuty.',
+    color: 'accent',
+  }
 ]
 
 export const experience = [
