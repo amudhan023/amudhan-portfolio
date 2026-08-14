@@ -101,14 +101,6 @@ export default function Hero() {
               >
                 LinkedIn
               </a>
-              <a
-                href={profile.github}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="font-heading text-sm px-6 py-3 border border-border text-muted hover:border-gold hover:text-gold transition-all duration-200 tracking-wide uppercase"
-              >
-                GitHub
-              </a>
             </div>
           </div>
 

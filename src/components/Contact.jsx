@@ -39,7 +39,7 @@ export default function Contact() {
                 label: 'GitHub',
                 value: 'github.com/amudhan023',
                 href: profile.github,
-                icon: '⌥',
+                icon: '❖',
               },
               {
                 label: 'Phone',
