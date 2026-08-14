@@ -48,7 +48,7 @@ export const projects = [
   {
     title: 'AI-Powered SRE Copilot',
     company: 'American Express',
-    year: '2024 – 2025',
+    year: '2025 – 2026',
     impact: 'Automated root-cause analysis on a live incident stream',
     tags: ['LangGraph', 'LangSmith', 'Kafka', 'Apache Flink', 'Agentic Workflows', 'Tool Calling', 'Prometheus', 'ELK', 'PagerDuty'],
     description:
@@ -103,26 +103,6 @@ export const projects = [
     tags: ['Kafka', 'GCP Pub/Sub', 'Apache Flink', 'Spark MLlib', 'AWS EMR', 'Cassandra'],
     description:
       'Architected a multi-tenant security analytics platform ingesting millions of security events per second using Kafka, GCP Pub/Sub, Apache Flink, and Spark on AWS EMR. Built an ML-driven threat correlation and enrichment pipeline with Spark MLlib and Cassandra, serving sub-10ms hot-path feature lookups for online scoring.',
-    color: 'gold',
-  },
-  {
-    title: 'Agentic Job-Application Assistant',
-    company: 'Personal Project',
-    year: '2025',
-    impact: 'Structured tool calling with confidence-gated autofill',
-    tags: ['LLM', 'Structured Tool Calling', 'Chrome Extension', 'Schema Validation', 'Knowledge Base'],
-    description:
-      'Chrome extension using an LLM with structured tool calling to parse ATS forms and auto-fill applications from a resume knowledge base; includes schema validation and a confidence threshold that defers to the user on low-certainty fields.',
-    color: 'accent',
-  },
-  {
-    title: 'Self-Hosted Interview Prep Platform',
-    company: 'Personal Project',
-    year: '2025',
-    impact: 'LLM-generated practice sets over a personal knowledge vault',
-    tags: ['FastAPI', 'SQLite', 'React', 'LLM Generation', 'Spaced Repetition', 'Analytics'],
-    description:
-      'FastAPI + SQLite + React application with LLM-generated practice sets, spaced repetition, and progress analytics over a personal knowledge vault.',
     color: 'gold',
   },
   {
