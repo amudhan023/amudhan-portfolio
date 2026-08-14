@@ -1,100 +1,128 @@
 export const profile = {
   name: 'Amudhan Shanmugam',
-  title: 'Senior Software Engineer',
-  tagline: '18+ years building large-scale distributed data platforms, real-time streaming systems, and cloud-native analytics.',
+  title: 'Senior AI / Platform Engineer',
+  tagline: '18+ years building distributed systems — and the last 2 shipping production LLM and agentic systems on top of them.',
   location: 'Dallas, Texas',
   phone: '(209) 684-8774',
   email: 'amudhan.sec@gmail.com',
   linkedin: 'https://www.linkedin.com/in/amudhans',
-  github: 'https://github.com',
-  summary: `Senior Software Engineer with 18+ years of experience building scalable distributed systems, real-time data platforms, and cloud-native applications across fintech, cybersecurity, and enterprise domains. Deep expertise in Kafka, Spark, Flink, Databricks, Snowflake, and modern cloud technologies across AWS, GCP, and Azure.`,
+  github: 'https://github.com/amudhan023',
+  summary: `Senior engineer with 18+ years building distributed systems, and the last 2 years shipping production LLM and agentic systems on top of them. Architected Kafka/Flink platforms processing 1B+ events daily at sub-second latency, then built an AI-powered SRE Copilot (LangGraph) that triages incidents against that stream, gated by an automated evaluation harness on every release. Depth in agent reliability, retrieval quality, LLM cost and latency optimization, and end-to-end observability (LangSmith, OpenTelemetry) on multi-tenant Kubernetes in a regulated fintech environment.`,
+  education: 'B.E. Electrical & Electronics, Anna University · Chennai, India · 2008',
 }
 
 export const skills = [
   {
+    category: 'AI & Agentic Systems',
+    icon: '🤖',
+    items: ['LangGraph', 'LangSmith', 'Agentic Workflows', 'Tool Calling', 'RAG & Retrieval Tuning', 'Vector Search', 'Prompt Engineering', 'Evaluation Harnesses', 'LLM-as-Judge', 'Guardrails & Prompt-Injection Defense', 'Model Routing & Caching', 'Token Cost Optimization'],
+  },
+  {
     category: 'Streaming & Data',
     icon: '⚡',
-    items: ['Apache Kafka', 'Apache Spark', 'PySpark', 'Apache Flink', 'Kafka Streams', 'Spark MLlib'],
+    items: ['Apache Kafka', 'Apache Flink', 'Kafka Streams', 'Apache Spark', 'PySpark', 'Delta Lake', 'Spark MLlib', 'Debezium CDC', 'Real-Time Feature Pipelines', 'ETL / ELT', 'Data Modeling'],
   },
   {
-    category: 'Lakehouse & Orchestration',
-    icon: '🏗️',
-    items: [ 'Delta Lake', 'Debezium', 'Kafka Connect', 'ETL / ELT'],
-  },
-  {
-    category: 'Cloud Platforms',
+    category: 'Cloud & Infrastructure',
     icon: '☁️',
-    items: ['AWS (S3, EMR, EC2 )', 'GCP (Pub/Sub)', 'Azure (Synapse, Data Explorer)'],
+    items: ['AWS (S3, EC2, EMR)', 'GCP (Pub/Sub)', 'Azure (Synapse)', 'Kubernetes (multi-tenant)', 'Docker', 'Terraform', 'Helm', 'Infrastructure as Code'],
   },
   {
-    category: 'Languages & Frameworks',
-    icon: '{}',
-    items: ['Scala', 'Java', 'Python', 'SQL',  'ZIO', 'Spring Boot', 'RxJava', 'Apache Camel'],
-  },
-  {
-    category: 'Infra & DevOps',
+    category: 'Reliability & Observability',
     icon: '📡',
-    items: ['Kubernetes (K8s)', 'Helm', 'Docker', 'Terraform', 'Jenkins CI/CD', 'OpenTelemetry'],
+    items: ['OpenTelemetry', 'Prometheus / Grafana', 'Distributed Tracing', 'SLO-Driven Design', 'Fault Tolerance', 'Threat Modeling'],
+  },
+  {
+    category: 'Languages & Backend',
+    icon: '{}',
+    items: ['Python', 'Java', 'Scala', 'ZIO', 'FastAPI', 'Spring Boot', 'SQL', 'Microservices', 'Distributed Systems'],
   },
   {
     category: 'Databases',
     icon: '🗄️',
-    items: ['PostgreSQL', 'Cassandra', 'Redis', 'Elasticsearch', 'MySQL'],
-  },
-  {
-    category: 'AI & Agentic Systems',
-    icon: '🤖',
-    items: ['LangGraph', 'LLM Applications', 'Agentic Workflows', 'Prompt Engineering', 'Tool Calling', 'FastAPI'],
+    items: ['PostgreSQL', 'MySQL', 'Redis', 'Cassandra', 'Elasticsearch', 'NoSQL'],
   },
 ]
 
 export const projects = [
   {
-    title: 'Real-Time Spend Analytics Platform',
+    title: 'AI-Powered SRE Copilot',
+    company: 'American Express',
+    year: '2024 – 2025',
+    impact: 'Automated root-cause analysis on a live incident stream',
+    tags: ['LangGraph', 'LangSmith', 'Kafka', 'Apache Flink', 'Agentic Workflows', 'Tool Calling', 'Prometheus', 'ELK', 'PagerDuty'],
+    description:
+      'Architected and shipped an AI-powered SRE Copilot (LangGraph + Kafka + Flink) that consumes real-time alerts, logs, metrics, traces, and deployment events to correlate cross-service failure patterns and produce root-cause analyses, incident summaries, and remediation recommendations — delivered to on-call engineers through Slack and PagerDuty, and adopted across multiple engineering teams to cut median incident triage time.',
+    color: 'accent',
+  },
+  {
+    title: 'LLM Evaluation Harness & Release Gate',
     company: 'American Express',
     year: '2025',
-    impact: '1B+ transaction events daily · sub-second latency',
-    tags: ['Apache Kafka', 'Apache Flink', 'Stateful Stream Processing', 'Event-Time Windowing', 'Transaction Enrichment', 'Real-time Analytics'],
+    impact: 'Blocked quality regressions before production',
+    tags: ['LLM-as-Judge', 'Golden Sets', 'LangSmith', 'CI/CD', 'Eval Rubrics', 'Human Calibration'],
     description:
-      'Architected and operated a large-scale real-time streaming platform using Apache Kafka and Apache Flink, processing 1B+ transaction events daily for near real-time spend analytics and transaction enrichment with sub-second latency, leveraging stateful stream processing, event-time windowing, and fault-tolerant checkpointing for high reliability and scalability.',
+      'Built the evaluation harness behind the SRE Copilot: a curated golden set of historical incidents scored by rubric-based LLM-as-judge with human calibration, wired into CI as a release gate. Every prompt, model, and retrieval change is scored before merge — raising root-cause accuracy release over release and blocking quality regressions from ever reaching production.',
     color: 'gold',
   },
   {
-    title: 'AI-Assisted SRE Copilot',
+    title: 'Agent Reliability & LLM Cost / Latency Optimization',
     company: 'American Express',
-    year: '2024',
-    impact: 'Automated root-cause analysis and incident response at scale',
-    tags: ['LangGraph', 'LLM', 'Kafka', 'Apache Flink', 'Prometheus', 'ELK', 'Agentic Workflows', 'PagerDuty'],
+    year: '2025',
+    impact: 'Lower serving cost and p99 latency at flat eval quality',
+    tags: ['Model Routing', 'Semantic Caching', 'Prompt Compression', 'Batching', 'Guardrails', 'PII Redaction', 'Fallback Models'],
     description:
-      'Developed an AI-powered SRE Copilot using LangGraph, Kafka, and Flink to ingest real-time alerts, logs, metrics, and traces. Correlates multi-service failures leveraging Prometheus, ELK, and deployment events to generate root-cause hypotheses, incident summaries, and mitigation recommendations via LLM-based analysis — delivered through Slack and PagerDuty.',
+      'Reduced LLM serving cost and p99 agent latency through model routing across capability tiers, prompt and context compression, semantic caching of repeated retrievals, and batching — while holding quality flat against the eval suite. Hardened the agent for a regulated environment with bounded tool-call loops, per-step timeouts and retries, fallback models on provider degradation, idempotent remediation actions, PII redaction, and output validation before any action reaches production systems.',
     color: 'accent',
+  },
+  {
+    title: 'Real-Time Spend Analytics Platform',
+    company: 'American Express',
+    year: '2023 – 2025',
+    impact: '1B+ transaction events daily · sub-second latency',
+    tags: ['Apache Kafka', 'Apache Flink', 'Stateful Stream Processing', 'Event-Time Windowing', 'Checkpointing', 'Transaction Enrichment'],
+    description:
+      'Architected and operated a large-scale real-time streaming platform on Apache Kafka and Apache Flink processing 1B+ transaction events daily with sub-second latency for spend analytics and transaction enrichment, using stateful stream processing, event-time windowing, and fault-tolerant checkpointing.',
+    color: 'gold',
   },
   {
     title: 'Unified Data Lakehouse Platform',
     company: 'American Express',
     year: '2023',
-    impact: 'Improved batch processing SLA by 60%',
-    tags: ['Data Engineering',
-    'Apache Spark',
-    'PySpark',
-    'Delta Lake',
-    'AWS S3',
-    'Data Lakehouse',
-    'Batch Processing',
-    'ETL Pipelines',
-    'Analytics Engineering'],
+    impact: 'Reporting SLA from 5 hours to under 2 hours',
+    tags: ['PySpark', 'Delta Lake', 'AWS S3', 'Batch Processing', 'Financial Reconciliation', 'Analytics Engineering'],
     description:
-      'Built scalable batch data processing pipelines using PySpark and Delta Lake on S3 to generate historical aggregations, reconciliation reports, and curated analytics datasets, reducing end-to-end reporting SLA timelines from 5 hours to under 2 hours (60% improvement) for downstream BI and machine learning workloads.',
+      'Built distributed batch pipelines with PySpark and Delta Lake on Amazon S3 for historical aggregations, financial reconciliation, and curated analytics datasets — improving reporting SLA from 5 hours to under 2 hours via partitioning, incremental processing, and storage optimization for downstream BI and ML workloads.',
     color: 'accent',
   },
   {
     title: 'Multi-Tenant Security Analytics Platform',
     company: 'Securonix',
     year: '2021',
-    impact: '70% latency reduction · Millions of events/sec',
-    tags: ['Kafka', 'GCP Pub/Sub', 'Flink', 'Spark MLlib', 'AWS EMR', 'Cassandra' ],
+    impact: 'Millions of security events / second · sub-10ms lookups',
+    tags: ['Kafka', 'GCP Pub/Sub', 'Apache Flink', 'Spark MLlib', 'AWS EMR', 'Cassandra'],
     description:
-      ' Architected a multi-tenant security analytics platform ingesting millions of security events per second using Kafka, GCP Pub/ Sub, Apache Flink, and Spark on AWS EMR. Built a threat correlation and enrichment pipeline using Spark MLlib and Cassandra for sub-10ms hot event lookups. ',
+      'Architected a multi-tenant security analytics platform ingesting millions of security events per second using Kafka, GCP Pub/Sub, Apache Flink, and Spark on AWS EMR. Built an ML-driven threat correlation and enrichment pipeline with Spark MLlib and Cassandra, serving sub-10ms hot-path feature lookups for online scoring.',
+    color: 'gold',
+  },
+  {
+    title: 'Agentic Job-Application Assistant',
+    company: 'Personal Project',
+    year: '2025',
+    impact: 'Structured tool calling with confidence-gated autofill',
+    tags: ['LLM', 'Structured Tool Calling', 'Chrome Extension', 'Schema Validation', 'Knowledge Base'],
+    description:
+      'Chrome extension using an LLM with structured tool calling to parse ATS forms and auto-fill applications from a resume knowledge base; includes schema validation and a confidence threshold that defers to the user on low-certainty fields.',
+    color: 'accent',
+  },
+  {
+    title: 'Self-Hosted Interview Prep Platform',
+    company: 'Personal Project',
+    year: '2025',
+    impact: 'LLM-generated practice sets over a personal knowledge vault',
+    tags: ['FastAPI', 'SQLite', 'React', 'LLM Generation', 'Spaced Repetition', 'Analytics'],
+    description:
+      'FastAPI + SQLite + React application with LLM-generated practice sets, spaced repetition, and progress analytics over a personal knowledge vault.',
     color: 'gold',
   },
   {
@@ -115,13 +143,27 @@ export const experience = [
     role: 'Senior Software Engineer',
     period: 'May 2023 – Present',
     location: 'Remote, TX',
+    scope: 'AI Platform & Streaming Infrastructure',
     highlights: [
-	  'Architected real-time streaming pipelines using Apache Flink, Kafka, and Debezium CDC for fraud detection and spend analytics platforms, processing 1B+ transaction events daily with sub-second latency to enable near real-time anomaly detection, transaction enrichment, and risk scoring.',
-      'Built scalable batch data processing pipelines using PySpark and Delta Lake on S3 to generate historical aggregations, reconciliation reports, and curated analytics datasets, reducing end-to-end reporting SLA timelines from 5 hours to under 2 hours (60% improvement) for downstream BI and machine learning workloads.',
-	  'Designed and implemented an Abstract Syntax Tree (AST) compiler that converted domain-specific expressions into executable JSON-based processing logic, reducing engineering effort for rule development by over 80%.',
-	  'Established a multi-tenant Kubernetes platform with Helm-managed deployments, Jenkins CI/ CD, and OpenTelemetry-based distributed tracing.',
+      'Architected and shipped an AI-powered SRE Copilot (LangGraph + Kafka + Flink) that consumes real-time alerts, logs, metrics, traces, and deployment events to correlate cross-service failure patterns and produce root-cause analyses, incident summaries, and remediation recommendations — adopted across engineering teams and cutting median incident triage time.',
+      'Built the evaluation harness for the Copilot using a curated golden set of historical incidents scored by rubric-based LLM-as-judge with human calibration, wired into CI as a release gate; raised root-cause accuracy and blocked quality regressions before production.',
+      'Reduced LLM serving cost and p99 agent latency through model routing across tiers, prompt and context compression, semantic caching of repeated retrievals, and batching, while holding quality flat against the eval suite.',
+      'Hardened agent reliability for a regulated environment: bounded tool-call loops, per-step timeouts and retries, fallback models on provider degradation, idempotent remediation actions, PII redaction, and output validation before any action reached production systems.',
+      'Architected and operated a large-scale real-time streaming platform on Apache Kafka and Apache Flink processing 1B+ transaction events daily with sub-second latency for spend analytics and transaction enrichment, using stateful stream processing, event-time windowing, and fault-tolerant checkpointing.',
+      'Built distributed batch pipelines with PySpark and Delta Lake on Amazon S3 for historical aggregations, financial reconciliation, and curated analytics datasets, improving reporting SLA from 5 hours to under 2 hours via partitioning, incremental processing, and storage optimization.',
+      'Established a multi-tenant Kubernetes platform (Helm, OpenTelemetry) with per-tenant isolation, deployment automation, and distributed tracing, cutting team onboarding from days to hours.',
     ],
-    tech: ['Scala', 'ZIO', 'Kafka', 'Debezium', 'Databricks', 'Snowflake', 'Airflow', 'Delta Lake', 'Kubernetes'],
+    tech: ['LangGraph', 'LangSmith', 'Python', 'Scala', 'ZIO', 'Kafka', 'Flink', 'PySpark', 'Delta Lake', 'Kubernetes', 'OpenTelemetry'],
+  },
+  {
+    company: 'Walmart Labs',
+    role: 'Senior Software Engineer',
+    period: 'Feb 2023 – Apr 2023',
+    location: 'Remote, TX',
+    highlights: [
+      'Short-term engagement focused on distributed data systems and high-throughput processing platforms.',
+    ],
+    tech: ['Java', 'Kafka', 'Distributed Systems'],
   },
   {
     company: 'Microsoft',
@@ -129,8 +171,7 @@ export const experience = [
     period: 'Jun 2022 – Jan 2023',
     location: 'Remote, TX',
     highlights: [
-      'Designed and implemented scalable end-to-end data ingestion, aggregation, and analytics platforms.',
-      'Built pipelines using Azure Synapse Analytics, PySpark, Bicep, and Terraform.',
+      'Designed and implemented scalable end-to-end data ingestion, aggregation, and analytics platforms on Azure Synapse Analytics with PySpark, Bicep, and Terraform.',
     ],
     tech: ['Azure Synapse', 'Python', 'PySpark', 'Terraform', 'Bicep'],
   },
@@ -140,8 +181,8 @@ export const experience = [
     period: 'Jun 2020 – Jun 2022',
     location: 'Dallas, TX',
     highlights: [
-      'Architected a multi-tenant security analytics platform ingesting millions of security events per second using Kafka, GCP Pub/ Sub, Apache Flink, and Spark on AWS EMR' ,
-	  'Built a threat correlation and enrichment pipeline using Spark MLlib and Cassandra for sub-10ms hot event lookups'
+      'Architected a multi-tenant security analytics platform ingesting millions of security events per second using Kafka, GCP Pub/Sub, Apache Flink, and Spark on AWS EMR.',
+      'Built an ML-driven threat correlation and enrichment pipeline with Spark MLlib and Cassandra, serving sub-10ms hot-path feature lookups for online scoring.',
     ],
     tech: ['Apache Kafka', 'GCP Pub/Sub', 'Apache Flink', 'Spark MLlib', 'AWS EMR', 'Cassandra'],
   },
@@ -151,8 +192,7 @@ export const experience = [
     period: 'May 2018 – Jun 2020',
     location: 'San Jose, CA',
     highlights: [
-      'Architected a non-blocking reactive data flow pipeline using RxJava for high-throughput, low-latency processing.',
-      'Built Spring Boot microservices for scalable data integration systems.',
+      'Architected a non-blocking reactive data flow pipeline using RxJava and Spring Boot microservices for high-throughput, low-latency processing.',
     ],
     tech: ['RxJava', 'Spring Boot', 'Spring Cloud'],
   },
@@ -162,15 +202,14 @@ export const experience = [
     period: 'May 2016 – Apr 2018',
     location: 'San Jose, CA',
     highlights: [
-      'Architected a high-performance multi-threaded streaming solution from Oracle to Elasticsearch, improving efficiency by 40%.',
-      'Implemented checkpoint-based auto-recovery and fault-tolerant handling across distributed components.',
+      'Architected a high-performance multi-threaded streaming solution from Oracle to Elasticsearch, improving throughput by 40% with checkpoint-based auto-recovery.',
     ],
     tech: ['Java', 'Kafka', 'Elasticsearch', 'ZooKeeper', 'Oracle'],
   },
   {
     company: 'General Motors',
     role: 'Java Tech Lead',
-    period: 'Oct 2014 – Apr 2016',
+    period: '2014 – 2016',
     location: 'Phoenix, AZ',
     highlights: [
       'Led technical design, demos, and developer meetings to remove blockers.',
@@ -180,10 +219,10 @@ export const experience = [
     tech: ['Java', 'Apache Camel', 'Multithreading'],
   },
   {
-    company: 'InComm Payments',
-    role: 'Senior Software Engineer',
-    period: 'Jun 2013 – Sep 2014',
-    location: 'Chennai',
+    company: 'InComm',
+    role: 'Software Developer',
+    period: '2013 – 2014',
+    location: 'India',
     highlights: [
       'Developed enterprise applications using Spring MVC, Spring DAO, Hibernate, and Oracle.',
       'Built monitoring and alerting features for throughput, latency, and JVM/OS metrics.',
@@ -192,9 +231,9 @@ export const experience = [
   },
   {
     company: 'Ford Motors',
-    role: 'System Analyst',
-    period: 'Jan 2012 – May 2013',
-    location: 'Chennai',
+    role: 'Systems Analyst',
+    period: '2012 – 2013',
+    location: 'India',
     highlights: [
       'Participated in full SDLC including prototyping, design, implementation, testing, and maintenance.',
       'Developed web applications for business reporting, system monitoring, and troubleshooting.',
@@ -203,9 +242,9 @@ export const experience = [
   },
   {
     company: 'Verizon Wireless',
-    role: 'Software Engineer',
-    period: 'Oct 2010 – Sep 2011',
-    location: 'Chennai',
+    role: 'Java Developer',
+    period: '2010 – 2011',
+    location: 'India',
     highlights: [
       'Designed and developed RESTful APIs for multiple business modules.',
       'Built enterprise applications using Spring, Hibernate, and Oracle.',
@@ -214,9 +253,9 @@ export const experience = [
   },
   {
     company: 'HDFC Bank',
-    role: 'Software Engineer',
-    period: 'Jul 2008 – Oct 2010',
-    location: 'Chennai',
+    role: 'Java Developer',
+    period: '2008 – 2010',
+    location: 'India',
     highlights: [
       'Developed web applications using Spring MVC architecture.',
       'Managed application configuration, deployment, and release automation with Maven and Tomcat.',

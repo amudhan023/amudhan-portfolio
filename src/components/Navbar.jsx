@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react'
+import { profile } from '../data'
 
 const navLinks = [
   { label: 'About', href: '#about' },
@@ -44,7 +45,7 @@ export default function Navbar() {
           ))}
           <li>
             <a
-              href="mailto:amudhanfz@gmail.com"
+              href={`mailto:${profile.email}`}
               className="font-heading text-sm px-4 py-2 border border-accent text-accent hover:bg-accent hover:text-ink transition-all duration-200 tracking-wide uppercase"
             >
               Hire Me

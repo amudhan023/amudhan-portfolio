@@ -16,7 +16,7 @@ export default function Contact() {
           <span className="text-gradient">Connect</span>
         </h2>
         <p className="font-body text-muted text-base max-w-xl mb-16">
-          Open to senior engineering, staff, and lead roles in distributed systems, data platforms, and cloud-native architectures. Based in Dallas — open to remote.
+          Open to senior, staff, and lead roles in AI platform engineering, agentic systems, and large-scale distributed data infrastructure. Based in Dallas — open to remote.
         </p>
 
         <div className="grid md:grid-cols-2 gap-8">
@@ -36,6 +36,12 @@ export default function Contact() {
                 icon: '◈',
               },
               {
+                label: 'GitHub',
+                value: 'github.com/amudhan023',
+                href: profile.github,
+                icon: '⌥',
+              },
+              {
                 label: 'Phone',
                 value: profile.phone,
                 href: `tel:${profile.phone}`,
@@ -46,6 +52,12 @@ export default function Contact() {
                 value: 'Dallas, Texas · Open to Remote',
                 href: null,
                 icon: '◉',
+              },
+              {
+                label: 'Education',
+                value: profile.education,
+                href: null,
+                icon: '◇',
               },
             ].map((item) => (
               <div

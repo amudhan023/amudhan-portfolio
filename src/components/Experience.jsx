@@ -20,7 +20,7 @@ export default function Experience() {
           <span className="text-gradient">Timeline</span>
         </h2>
         <p className="font-body text-muted text-base max-w-xl mb-16">
-          18+ years across fintech, cybersecurity, retail tech, and enterprise software at industry-leading companies.
+          18+ years across fintech, cybersecurity, retail tech, and enterprise software — most recently building AI platform and streaming infrastructure at American Express.
         </p>
 
         <div className="grid md:grid-cols-[260px_1fr] gap-8">
@@ -61,6 +61,9 @@ export default function Experience() {
                   <span className="w-1 h-1 rounded-full bg-border" />
                   <span className="font-mono text-xs text-muted">{current.location}</span>
                 </div>
+                {current.scope && (
+                  <div className="font-mono text-xs text-gold/80 mt-2">Scope: {current.scope}</div>
+                )}
               </div>
               <span className="font-mono text-xs px-3 py-1.5 border border-border text-muted">
                 {current.period}

@@ -9,11 +9,14 @@ export default function Footer() {
           <span className="font-body text-xs text-muted">Amudhan Shanmugam</span>
         </div>
         <div className="font-mono text-xs text-muted/40 text-center">
-          Senior Software Engineer · Dallas, TX · {new Date().getFullYear()}
+          {profile.title} · Dallas, TX · {new Date().getFullYear()}
         </div>
         <div className="flex items-center gap-6">
           <a href={profile.linkedin} target="_blank" rel="noopener noreferrer" className="font-mono text-xs text-muted hover:text-accent transition-colors">
             LinkedIn
+          </a>
+          <a href={profile.github} target="_blank" rel="noopener noreferrer" className="font-mono text-xs text-muted hover:text-accent transition-colors">
+            GitHub
           </a>
           <a href={`mailto:${profile.email}`} className="font-mono text-xs text-muted hover:text-accent transition-colors">
             Email

@@ -14,7 +14,7 @@ export default function Skills() {
           <span className="text-gradient">Expertise</span>
         </h2>
         <p className="font-body text-muted text-base max-w-xl mb-16">
-          18+ years across the full distributed systems stack — from streaming pipelines to cloud infrastructure.
+          From agentic LLM systems and evaluation harnesses down to the streaming platforms and cloud infrastructure they run on.
         </p>
 
         {/* Skills grid */}
@@ -50,7 +50,7 @@ export default function Skills() {
         {/* Also experienced in */}
         <div className="mt-8 p-6 border border-border bg-panel">
           <span className="font-mono text-xs text-muted tracking-widest uppercase mr-4">Also experienced in:</span>
-          {['Helm Charts', 'ZooKeeper', 'Elasticsearch', 'Hibernate', 'Apache Camel', 'Spring MVC', 'Oracle DB', 'Maven', 'Docker', 'Linux'].map((t) => (
+          {['Kafka Connect', 'ZooKeeper', 'Elasticsearch', 'Azure Bicep', 'RxJava', 'Apache Camel', 'Hibernate', 'Spring MVC', 'Oracle DB', 'Maven', 'Jenkins CI/CD', 'Linux'].map((t) => (
             <span key={t} className="inline-block font-mono text-xs text-muted/60 mr-3 mb-1 hover:text-muted transition-colors">
               {t}
             </span>
