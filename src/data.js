@@ -8,7 +8,7 @@ export const profile = {
   linkedin: 'https://www.linkedin.com/in/amudhans',
   github: 'https://github.com/amudhan023',
   summary: `Senior engineer with 18+ years building distributed systems, and the last 2 years shipping production LLM and agentic systems on top of them. Architected Kafka/Flink platforms processing 1B+ events daily at sub-second latency, then built an AI-powered SRE Copilot (LangGraph) that triages incidents against that stream, gated by an automated evaluation harness on every release. Depth in agent reliability, retrieval quality, LLM cost and latency optimization, and end-to-end observability (LangSmith, OpenTelemetry) on multi-tenant Kubernetes in a regulated fintech environment.`,
-  education: 'B.E. Electrical & Electronics, Anna University · Chennai, India · 2008',
+  education: 'B.E. Electrical & Electronics, Anna University',
 }
 
 export const skills = [
