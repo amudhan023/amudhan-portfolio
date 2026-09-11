@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react'
 import { profile } from '../data'
 
 const roles = [
-  'Senior AI / Platform Engineer',
+  'Senior AI Platform Engineer',
   'Agentic Systems Engineer',
   'Distributed Systems Architect',
   'Streaming Data Engineer',

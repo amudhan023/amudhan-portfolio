@@ -1,6 +1,6 @@
 export const profile = {
   name: 'Amudhan Shanmugam',
-  title: 'Senior AI / Platform Engineer',
+  title: 'Senior AI Platform Engineer',
   tagline: '18+ years building distributed systems — and the last 2 shipping production LLM and agentic systems on top of them.',
   location: 'Dallas, Texas',
   phone: '(209) 684-8774',
