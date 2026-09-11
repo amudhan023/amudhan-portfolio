@@ -17,7 +17,7 @@ export default function Projects() {
           <span className="text-gradient">Impact Work</span>
         </h2>
         <p className="font-body text-muted text-base max-w-xl mb-16">
-          Production agentic systems and the streaming platforms underneath them — built for scale, reliability, and measurable outcomes.
+          Production agentic systems and the streaming platforms underneath them, built for scale, reliability, and measurable outcomes.
         </p>
 
         {/* Projects */}

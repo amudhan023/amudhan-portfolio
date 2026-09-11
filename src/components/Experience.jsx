@@ -20,7 +20,7 @@ export default function Experience() {
           <span className="text-gradient">Timeline</span>
         </h2>
         <p className="font-body text-muted text-base max-w-xl mb-16">
-          18+ years across fintech, cybersecurity, retail tech, and enterprise software — most recently building AI platform and streaming infrastructure at American Express.
+          18+ years across fintech, cybersecurity, retail tech, and enterprise software, most recently building AI platform and streaming infrastructure at American Express.
         </p>
 
         <div className="grid md:grid-cols-[260px_1fr] gap-8">

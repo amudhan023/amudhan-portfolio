@@ -50,7 +50,7 @@ export default function Skills() {
         {/* Also experienced in */}
         <div className="mt-8 p-6 border border-border bg-panel">
           <span className="font-mono text-xs text-muted tracking-widest uppercase mr-4">Also experienced in:</span>
-          {['Kafka Connect', 'ZooKeeper', 'Elasticsearch', 'Azure Bicep', 'RxJava', 'Apache Camel', 'Hibernate', 'Spring MVC', 'Oracle DB', 'Maven', 'Jenkins CI/CD', 'Linux'].map((t) => (
+          {['Kafka Connect', 'ZooKeeper', 'Spark MLlib', 'Debezium CDC', 'Azure Bicep', 'Spring Cloud', 'Apache Camel', 'Hibernate', 'Spring MVC', 'Oracle DB', 'Maven', 'Linux'].map((t) => (
             <span key={t} className="inline-block font-mono text-xs text-muted/60 mr-3 mb-1 hover:text-muted transition-colors">
               {t}
             </span>

@@ -16,7 +16,7 @@ export default function Contact() {
           <span className="text-gradient">Connect</span>
         </h2>
         <p className="font-body text-muted text-base max-w-xl mb-16">
-          Open to senior, staff, and lead roles in AI platform engineering, agentic systems, and large-scale distributed data infrastructure. Based in Dallas — open to remote.
+          Open to senior, staff, and lead roles in AI platform engineering, agentic systems, and large-scale distributed data infrastructure. Based in Dallas, open to remote.
         </p>
 
         <div className="grid md:grid-cols-2 gap-8">
@@ -91,7 +91,7 @@ export default function Contact() {
             className="space-y-4"
           >
             <div className="text-xs font-mono text-muted mb-4 border-b border-border pb-3">
-              {/* Replace YOUR_FORM_ID at formspree.io — free tier, no backend needed */}
+              {/* Replace YOUR_FORM_ID at formspree.io (free tier, no backend needed) */}
               {'// Send a message directly'}
             </div>
             <div>

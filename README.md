@@ -1,4 +1,4 @@
-# Amudhan Shanmugam — Portfolio Website
+# Amudhan Shanmugam: Portfolio Website
 
 Personal portfolio built with **React + Vite + Tailwind CSS**.
 

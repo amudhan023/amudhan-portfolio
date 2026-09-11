@@ -104,13 +104,13 @@ export default function Hero() {
             </div>
           </div>
 
-          {/* Right — stat cards */}
+          {/* Right side: stat cards */}
           <div className="hidden lg:grid grid-cols-2 gap-4 animate-fade-in opacity-0-init animate-delay-600" style={{ animationFillMode: 'forwards' }}>
             {[
               { number: '18+', label: 'Years Engineering', accent: 'accent' },
-              { number: '2', label: 'Years Production LLM Systems', accent: 'gold' },
-              { number: '1B+', label: 'Events / Day Processed', accent: 'accent' },
-              { number: '<1s', label: 'Streaming Latency', accent: 'gold' },
+              { number: '1B+', label: 'Events / Day Processed', accent: 'gold' },
+              { number: '44%', label: 'Faster Incident Triage', accent: 'accent' },
+              { number: '82%', label: 'Agent Root-Cause Accuracy', accent: 'gold' },
             ].map((stat) => (
               <div
                 key={stat.label}
@@ -127,7 +127,7 @@ export default function Hero() {
             <div className="col-span-2 bg-panel border border-border p-6">
               <div className="font-mono text-xs text-muted mb-4">// Core stack</div>
               <div className="flex flex-wrap gap-2">
-                {['LangGraph', 'LangSmith', 'RAG', 'Kafka', 'Flink', 'PySpark', 'Delta Lake', 'Python', 'Scala', 'AWS', 'K8s', 'OpenTelemetry'].map((tech) => (
+                {['LangGraph', 'LangSmith', 'MCP', 'RAG', 'pgvector', 'Kafka', 'Flink', 'PySpark', 'Python', 'FastAPI', 'K8s', 'OpenTelemetry'].map((tech) => (
                   <span
                     key={tech}
                     className="font-mono text-xs px-2 py-1 bg-border/50 text-accent/80 hover:bg-accent/10 hover:text-accent transition-colors duration-150"
