@@ -1,13 +1,13 @@
 export const profile = {
   name: 'Amudhan Shanmugam',
-  title: 'Senior AI Platform Engineer',
+  title: 'Senior AI Engineer',
   tagline: '18+ years building distributed systems, and the last 2 shipping production AI and agentic systems on top of them: 1B+ events a day, 44% faster incident triage.',
   location: 'Dallas, Texas',
   phone: '(209) 684-8774',
   email: 'amudhan.sec@gmail.com',
   linkedin: 'https://www.linkedin.com/in/amudhans',
   github: 'https://github.com/amudhan023',
-  summary: `Senior AI Platform Engineer with 18+ years building distributed systems and real-time data platforms, and the last 2 years focused on production AI and agentic systems. Architected streaming platforms processing 1B+ events daily at sub-second latency, and LangGraph-based AI SRE agents that reduced median triage time by 44% and improved root-cause accuracy from 53% to 82%. Depth in RAG and hybrid retrieval, LLM evaluation, MCP integrations, AI reliability and security, observability, cloud, Kubernetes, and scalable platform engineering.`,
+  summary: `Senior AI Engineer with 18+ years building distributed systems and real-time data platforms, and the last 2 years focused on production AI and agentic systems. Architected streaming platforms processing 1B+ events daily at sub-second latency, and LangGraph-based AI SRE agents that reduced median triage time by 44% and improved root-cause accuracy from 53% to 82%. Depth in RAG and hybrid retrieval, LLM evaluation, MCP integrations, AI reliability and security, observability, cloud, Kubernetes, and scalable platform engineering.`,
   education: 'B.E. Electrical & Electronics, Anna University',
 }
 
@@ -111,16 +111,6 @@ export const projects = [
     color: 'accent',
   },
   {
-    title: 'Unified Data Lakehouse Platform',
-    company: 'American Express',
-    year: '2023',
-    impact: 'Reporting SLA from 5 hours to under 2 hours',
-    tags: ['PySpark', 'Delta Lake', 'AWS S3', 'Batch Processing', 'Financial Reconciliation', 'Analytics Engineering'],
-    description:
-      'Built distributed batch pipelines with PySpark and Delta Lake on Amazon S3 for historical aggregations, financial reconciliation, and curated analytics datasets, improving reporting SLA from 5 hours to under 2 hours via partitioning, incremental processing, and storage optimization for downstream BI and ML workloads.',
-    color: 'gold',
-  },
-  {
     title: 'Multi-Tenant Security Analytics Platform',
     company: 'Securonix',
     year: '2021',
@@ -148,7 +138,6 @@ export const experience = [
     role: 'Senior Software Engineer, AI Platforms',
     period: 'May 2023 – Present',
     location: 'Remote, TX',
-    scope: 'AI Platform & Streaming Infrastructure',
     highlights: [
       'Architected and operated a large-scale Kafka/Flink streaming platform processing 1B+ transaction events daily with sub-second latency for real-time spend analytics and transaction enrichment.',
       'Built PySpark and Delta Lake batch pipelines on Amazon S3 for historical aggregation and financial reconciliation, reducing reporting SLA from 5 hours to under 2 hours through partitioning and incremental processing.',
